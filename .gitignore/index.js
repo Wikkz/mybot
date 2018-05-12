@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const token = "NDQ0ODkyODU2NzA5MTUyNzg4.Ddj5lw.jwEDTzcHLmilJFXsS8iDUpEAFPI";
 const PREFIX = '*';
 const ytdl = require('ytdl-core');
 const streamOptions = { seek: 0, volume: 1 };
@@ -67,4 +66,4 @@ if(message.content === PREFIX+"resume"){
 }
 });
 
-bot.login(token);
+bot.login(process.env.TOKEN);
